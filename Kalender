@@ -1,0 +1,28 @@
+class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+
+
+            Console.WriteLine("Wollen Sie einen Termin eingeben drücken sie die 1");
+            int termineing = Convert.ToInt32(Console.ReadLine());
+            if (termineing < 1 && termineing > 1)
+            {
+
+            }
+            if (termineing == 1)
+            {
+                Console.WriteLine("Geben sie ihren Terminnamen ein: ");
+                string terminName = Console.ReadLine();
+                Console.WriteLine("Geben Sie die Termin beschreibung ein: ");
+                string terminBetreff = Console.ReadLine();
+                Console.WriteLine("Geben sie ein Startdatum und Uhrzeit ein: ");
+                string startDatum = Convert.ToString(Console.ReadLine());
+                Console.WriteLine("Geben Sie ein Enddatum und Uhrzeit ein");
+                string endDatum = Convert.ToString(Console.ReadLine());
+
+
+                Console.WriteLine("Ihr Termin: " + terminName + " " + terminBetreff + " findet am " + startDatum + " statt und hört am: " + endDatum + " auf");
+                Console.ReadLine();
